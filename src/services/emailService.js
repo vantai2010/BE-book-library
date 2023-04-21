@@ -85,7 +85,7 @@ let getBodyHTMLEmailForgotPassword = (dataSend) => {
         <h3>xin chào</h3>
         <p>Bạn nhận được email này vì bạn có nhu cầu lấy lại mật khẩu</p>
         <p>Bạn vui lòng nhấn vào link bên dưới để đặt lại mật khẩu của mình<p>
-        <a href="${process.env.URL_FRONT_END}/auth/forgot-password/${dataSend.reciverEmail}/${dataSend.phoneNumber}/${dataSend.language}">click here</a>
+        <a href="${process.env.URL_FRONT_END}/auth/forgot-password?email=${dataSend.reciverEmail}&phoneNumber=${dataSend.phoneNumber}&language=${dataSend.language}">click here</a>
         <div>Xin chân thành cảm ơn quý khách đã tin tưởng xử dụng dịch vụ của chúng tôi</div>
     `
     } else {
@@ -93,7 +93,7 @@ let getBodyHTMLEmailForgotPassword = (dataSend) => {
         <h3>hello</h3>
          <p>You received this email because you need to reset your password</p>
          <p>Please click the link below to reset your password<p>
-         <a href="${process.env.URL_FRONT_END}/auth/forgot-password/${dataSend.reciverEmail}/${dataSend.phoneNumber}/${dataSend.language}">click here</a>
+         <a href="${process.env.URL_FRONT_END}/auth/forgot-password?email=${dataSend.reciverEmail}&phoneNumber=${dataSend.phoneNumber}&language=${dataSend.language}">click here</a>
          <div>Thank you very much for trusting our service</div>
         `
     }
