@@ -181,7 +181,7 @@ let getBodyHTMLRegisterEmail = (dataSend) => {
         <h3>xin chào</h3>
         <p>Bạn nhận được email này vì bạn đã đăng ký tài khoản bên thư viện eagleClup chúng tôi</p>
         <p>Bên dưới có một đường link để đấn đến thủ tục tiếp theo trong quá trình đăng ký tài khoản của chúng tôi bạn vui lòng vào và nhập đầy đủ thông tin cá nhân của bản thân.<p>
-        <a href="${process.env.URL_FRONT_END}${dataSend.link}/${dataSend.reciverEmail}/${dataSend.language}">click here</a>
+        <a href="${process.env.URL_FRONT_END}${dataSend.link}?email=${dataSend.reciverEmail}&language=${dataSend.language}">click here</a>
         <div>Xin chân thành cảm ơn quý khách đã tin tưởng xử dụng dịch vụ của chúng tôi</div>
     `
     } else {
@@ -189,7 +189,7 @@ let getBodyHTMLRegisterEmail = (dataSend) => {
         <h3>hello</h3>
         <p>You received this email because you signed up for an account with our eagleClup library</p>
         <p>There is a link below to go to the next step in our account registration process. Please enter and fill in your personal information.<p>
-        <a href="${process.env.URL_FRONT_END}${dataSend.link}/${dataSend.reciverEmail}/${dataSend.language}">click here</a>
+        <a href="${process.env.URL_FRONT_END}${dataSend.link}?email=${dataSend.reciverEmail}&language=${dataSend.language}">click here</a>
         <div>Thank you very much for trusting our service</div>
         `
     }
